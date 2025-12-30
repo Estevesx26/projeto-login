@@ -13,9 +13,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html,body{
+    height: 100%;
+}
+
 main{
     background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
-    height: 100vh;
+    min-height: 100%;
 
     display: flex;
 }
@@ -49,7 +53,7 @@ h1{
 }
 
 p{
-    text-align: justify;
+    text-align: left;
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -131,3 +135,62 @@ p{
 #esqc:hover{
     background-color:lightgray;
 }
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+
+  #login{
+        display: flex;
+    }
+
+  #imagem{
+        width: 50%;
+        height: auto;
+
+        border-radius:20px 0px 0px 20px ;
+  }
+
+  #formulario{
+        width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+#login{
+        display: flex;
+    }
+
+  #imagem{
+        width: 50%;
+        height: auto;
+
+        border-radius:20px 0px 0px 20px ;
+  }
+
+  #formulario{
+        width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  #login{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+  #imagem{
+        width: 50%;
+        height: auto;
+
+        border-radius:0px 20px 20px 0px ;
+  }
+
+  #formulario{
+        width: 50%;
+  }
+}
+
+
+
+
